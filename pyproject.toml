@@ -52,9 +52,6 @@ disable_error_code = ["import-untyped", "no-any-return"]
 pythonpath = "."
 addopts = ["--import-mode=importlib", "--doctest-modules"]
 
-[tool.setuptools]
-packages = ["titanium"]
-
 [tool.ruff.lint]
 exclude = ["**samples/**"]
 select = ["ALL"]
