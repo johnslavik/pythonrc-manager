@@ -9,9 +9,11 @@ import subprocess
 import sys
 from collections.abc import Callable, Generator
 from contextlib import contextmanager
-from typing import TYPE_CHECKING, Self
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
+    from typing import Self
+
     from _typeshed import StrPath
 
 PYTHONRC_BASENAME = os.environ.get("PYTHONRC_SCRIPT_BASENAME") or ".repl.py"
